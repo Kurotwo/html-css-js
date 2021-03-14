@@ -1,0 +1,35 @@
+#grey {
+    color:rgba(128, 128, 128, 0.5); 
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold, .uppercase {
+    color: blue; 
+}
+
+/* Gets applied to list items */
+.list li {
+    color: green;
+}
+
+/* Doesn't get applied to list items as CSS is 
+   first come, first served
+ */
+ul > li {
+    color: red;
+}
+
+.hoverable:hover {
+    color: green;
+}
+
+.paragraph::first-line {
+    font-size: 20px;
+}
