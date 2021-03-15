@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>HTML CSS JS</title>
 </head>
 <body>
-    
+    <div id="main-container">
+        <h3 id="greeting-message" class="text-center">Welcome Visitor!</h3>
+        <form onsubmit="return false;">
+            <div class="form-group">
+              <label for="first-name" class="form-label">First Name:</label>
+              <input type="text" class="form-control" id="first-name" name="firstName" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+              <label for="last-name" class="form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" name="lastName" placeholder="Enter last name">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" onclick="validateInput();">Sign In</button>
+            </div>
+        </form>
+    </div>
 </body>
+<script src="../js/main.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </html>

@@ -16,10 +16,14 @@ function variableTypes() {
 
     myVar = {
         name: "DLSU LSCS",
-        age: 49
+        age: 49,
+        printName: function() {
+            return "My name is " + this.name;
+        }
     }; //Object
     console.log("Object: " + myVar);
 }
+// variableTypes();
 
 /*
     Operators
@@ -34,20 +38,39 @@ function operators() {
     console.log(0 == '0') // True, == performs type conversion
     console.log(0 === '0') // False, === doesn't perform type conversion
 }
+// operators();
 
 /*
     Conditional blocks
 */
-function conditionals(number) {
-    if (number > 100) {
-        console.log("Number is greater than 100");
-    } else if (number == 100) {
-        console.log("Number is equal to 100");
+function conditionals(score) {
+    if (score >= 94) {
+        return "Wooh Quatro";
+    } else if (score < 94 && score >=90) {
+        return "Pwede na 3.5";
     } else {
-        console.log("Number is less than 100");
-    }
-    return number;
+        return "Bawi nalang next time";
+    }   
 }
+// console.log(conditionals(95));
+
+/*
+
+*/
+function loops() {
+    let arr = [1,2,3,4,5];
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+    let person = {
+        firstName: "Vincenzo",
+        lastName: "Cassano"
+    }; 
+    for (key in person) {
+        console.log(person[key]);
+    }
+}
+// loops();
 
 /*
     Main difference between let and var is their scoping rules
@@ -67,5 +90,4 @@ function declarationDifferences() {
     console.log(moo); // Mooo
     console.log(baz); // ReferenceError
 }
-  
-declarationDifferences();
+// declarationDifferences();

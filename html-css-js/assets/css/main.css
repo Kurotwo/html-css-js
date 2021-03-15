@@ -1,0 +1,16 @@
+body {
+    background-color: #EFF2F4;
+}
+
+#main-container {
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
