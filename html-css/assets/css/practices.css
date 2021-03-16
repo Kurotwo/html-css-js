@@ -1,0 +1,64 @@
+/**
+    Comment the main use of your stylesheet at the beginning
+*/
+
+/**
+    CSS Variables at the beginning. 
+    Keep this in a shared css file to avoid redundancy 
+*/
+:root {
+    --primary:  #1e90ff;
+    --secondary: #ffffff;
+}
+
+/**
+    Declare global styles in a shared css file
+*/
+body {
+    margin: 0; 
+    font-size: 18px; 
+    font-family: 'Lato';
+    color: black;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700; 
+}
+
+.container {
+    color: var(--primary);
+    background-color: var(--secondary);
+    padding: 15px;
+}
+
+/**
+    Group similar elements together for better readability.
+    Keep a consistent format for naming variables. 
+*/
+
+.btn {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
